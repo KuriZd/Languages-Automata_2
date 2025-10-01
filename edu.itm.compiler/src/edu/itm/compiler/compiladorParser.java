@@ -1,5 +1,5 @@
-// $ANTLR 3.5.2 compilador.g 2025-09-30 23:52:56
- 
+
+package edu.itm.compiler;
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -8,6 +8,12 @@ import java.util.ArrayList;
 
 @SuppressWarnings("all")
 public class compiladorParser extends Parser {
+    private javax.swing.JTextArea taSalida;
+
+    public void setSalida(javax.swing.JTextArea _salida) {
+        this.taSalida = _salida;
+    }
+    
 	public static final String[] tokenNames = new String[] {
 		"<invalid>", "<EOR>", "<DOWN>", "<UP>", "CCURLYB", "CFLOAT", "CINT", "CLASS", 
 		"COMMA", "DOT", "DOUBLE", "ID", "INT", "OCURLYB", "PRIVATE", "PROTECTED", 

@@ -1,4 +1,4 @@
-// $ANTLR 3.5.2 compilador.g 2025-09-30 23:52:56
+// $ANTLR 3.5.2 compiler.g 2025-10-01 01:44:36
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 @SuppressWarnings("all")
-public class compiladorLexer extends Lexer {
+public class compilerLexer extends Lexer {
 	public static final int EOF=-1;
 	public static final int T__19=19;
 	public static final int T__20=20;
@@ -36,22 +36,22 @@ public class compiladorLexer extends Lexer {
 		return new Lexer[] {};
 	}
 
-	public compiladorLexer() {} 
-	public compiladorLexer(CharStream input) {
+	public compilerLexer() {} 
+	public compilerLexer(CharStream input) {
 		this(input, new RecognizerSharedState());
 	}
-	public compiladorLexer(CharStream input, RecognizerSharedState state) {
+	public compilerLexer(CharStream input, RecognizerSharedState state) {
 		super(input,state);
 	}
-	@Override public String getGrammarFileName() { return "compilador.g"; }
+	@Override public String getGrammarFileName() { return "compiler.g"; }
 
 	// $ANTLR start "T__19"
 	public final void mT__19() throws RecognitionException {
 		try {
 			int _type = T__19;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:2:7: ( '(' )
-			// compilador.g:2:9: '('
+			// compiler.g:2:7: ( '(' )
+			// compiler.g:2:9: '('
 			{
 			match('('); 
 			}
@@ -70,8 +70,8 @@ public class compiladorLexer extends Lexer {
 		try {
 			int _type = T__20;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:3:7: ( ')' )
-			// compilador.g:3:9: ')'
+			// compiler.g:3:7: ( ')' )
+			// compiler.g:3:9: ')'
 			{
 			match(')'); 
 			}
@@ -90,8 +90,8 @@ public class compiladorLexer extends Lexer {
 		try {
 			int _type = T__21;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:4:7: ( '*' )
-			// compilador.g:4:9: '*'
+			// compiler.g:4:7: ( '*' )
+			// compiler.g:4:9: '*'
 			{
 			match('*'); 
 			}
@@ -110,8 +110,8 @@ public class compiladorLexer extends Lexer {
 		try {
 			int _type = T__22;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:5:7: ( '+' )
-			// compilador.g:5:9: '+'
+			// compiler.g:5:7: ( '+' )
+			// compiler.g:5:9: '+'
 			{
 			match('+'); 
 			}
@@ -130,8 +130,8 @@ public class compiladorLexer extends Lexer {
 		try {
 			int _type = T__23;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:6:7: ( '-' )
-			// compilador.g:6:9: '-'
+			// compiler.g:6:7: ( '-' )
+			// compiler.g:6:9: '-'
 			{
 			match('-'); 
 			}
@@ -150,8 +150,8 @@ public class compiladorLexer extends Lexer {
 		try {
 			int _type = T__24;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:7:7: ( '=' )
-			// compilador.g:7:9: '='
+			// compiler.g:7:7: ( '=' )
+			// compiler.g:7:9: '='
 			{
 			match('='); 
 			}
@@ -165,55 +165,13 @@ public class compiladorLexer extends Lexer {
 	}
 	// $ANTLR end "T__24"
 
-	// $ANTLR start "INT"
-	public final void mINT() throws RecognitionException {
-		try {
-			int _type = INT;
-			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:39:11: ( 'int' )
-			// compilador.g:39:13: 'int'
-			{
-			match("int"); 
-
-			}
-
-			state.type = _type;
-			state.channel = _channel;
-		}
-		finally {
-			// do for sure before leaving
-		}
-	}
-	// $ANTLR end "INT"
-
-	// $ANTLR start "DOUBLE"
-	public final void mDOUBLE() throws RecognitionException {
-		try {
-			int _type = DOUBLE;
-			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:40:11: ( 'double' )
-			// compilador.g:40:13: 'double'
-			{
-			match("double"); 
-
-			}
-
-			state.type = _type;
-			state.channel = _channel;
-		}
-		finally {
-			// do for sure before leaving
-		}
-	}
-	// $ANTLR end "DOUBLE"
-
 	// $ANTLR start "PUBLIC"
 	public final void mPUBLIC() throws RecognitionException {
 		try {
 			int _type = PUBLIC;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:41:11: ( 'public' )
-			// compilador.g:41:13: 'public'
+			// compiler.g:90:13: ( 'public' )
+			// compiler.g:90:15: 'public'
 			{
 			match("public"); 
 
@@ -233,8 +191,8 @@ public class compiladorLexer extends Lexer {
 		try {
 			int _type = PRIVATE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:42:11: ( 'private' )
-			// compilador.g:42:13: 'private'
+			// compiler.g:91:13: ( 'private' )
+			// compiler.g:91:15: 'private'
 			{
 			match("private"); 
 
@@ -254,8 +212,8 @@ public class compiladorLexer extends Lexer {
 		try {
 			int _type = PROTECTED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:43:11: ( 'protected' )
-			// compilador.g:43:13: 'protected'
+			// compiler.g:92:13: ( 'protected' )
+			// compiler.g:92:15: 'protected'
 			{
 			match("protected"); 
 
@@ -270,13 +228,76 @@ public class compiladorLexer extends Lexer {
 	}
 	// $ANTLR end "PROTECTED"
 
+	// $ANTLR start "INT"
+	public final void mINT() throws RecognitionException {
+		try {
+			int _type = INT;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// compiler.g:93:13: ( 'int' )
+			// compiler.g:93:15: 'int'
+			{
+			match("int"); 
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "INT"
+
+	// $ANTLR start "DOUBLE"
+	public final void mDOUBLE() throws RecognitionException {
+		try {
+			int _type = DOUBLE;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// compiler.g:94:13: ( 'double' )
+			// compiler.g:94:15: 'double'
+			{
+			match("double"); 
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "DOUBLE"
+
+	// $ANTLR start "CLASS"
+	public final void mCLASS() throws RecognitionException {
+		try {
+			int _type = CLASS;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// compiler.g:95:13: ( 'class' )
+			// compiler.g:95:15: 'class'
+			{
+			match("class"); 
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "CLASS"
+
 	// $ANTLR start "OCURLYB"
 	public final void mOCURLYB() throws RecognitionException {
 		try {
 			int _type = OCURLYB;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:45:11: ( '{' )
-			// compilador.g:45:13: '{'
+			// compiler.g:96:13: ( '{' )
+			// compiler.g:96:15: '{'
 			{
 			match('{'); 
 			}
@@ -295,8 +316,8 @@ public class compiladorLexer extends Lexer {
 		try {
 			int _type = CCURLYB;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:46:11: ( '}' )
-			// compilador.g:46:13: '}'
+			// compiler.g:97:13: ( '}' )
+			// compiler.g:97:15: '}'
 			{
 			match('}'); 
 			}
@@ -310,34 +331,13 @@ public class compiladorLexer extends Lexer {
 	}
 	// $ANTLR end "CCURLYB"
 
-	// $ANTLR start "CLASS"
-	public final void mCLASS() throws RecognitionException {
-		try {
-			int _type = CLASS;
-			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:47:11: ( 'class' )
-			// compilador.g:47:13: 'class'
-			{
-			match("class"); 
-
-			}
-
-			state.type = _type;
-			state.channel = _channel;
-		}
-		finally {
-			// do for sure before leaving
-		}
-	}
-	// $ANTLR end "CLASS"
-
 	// $ANTLR start "COMMA"
 	public final void mCOMMA() throws RecognitionException {
 		try {
 			int _type = COMMA;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:49:11: ( ',' )
-			// compilador.g:49:14: ','
+			// compiler.g:99:13: ( ',' )
+			// compiler.g:99:15: ','
 			{
 			match(','); 
 			}
@@ -356,8 +356,8 @@ public class compiladorLexer extends Lexer {
 		try {
 			int _type = SEMICOLON;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:50:11: ( ';' )
-			// compilador.g:50:14: ';'
+			// compiler.g:100:13: ( ';' )
+			// compiler.g:100:15: ';'
 			{
 			match(';'); 
 			}
@@ -376,8 +376,8 @@ public class compiladorLexer extends Lexer {
 		try {
 			int _type = DOT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:51:11: ( '.' )
-			// compilador.g:51:14: '.'
+			// compiler.g:101:13: ( '.' )
+			// compiler.g:101:15: '.'
 			{
 			match('.'); 
 			}
@@ -391,40 +391,15 @@ public class compiladorLexer extends Lexer {
 	}
 	// $ANTLR end "DOT"
 
-	// $ANTLR start "CFLOAT"
-	public final void mCFLOAT() throws RecognitionException {
-		try {
-			int _type = CFLOAT;
-			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:52:11: ( CINT DOT CINT )
-			// compilador.g:52:14: CINT DOT CINT
-			{
-			mCINT(); 
-
-			mDOT(); 
-
-			mCINT(); 
-
-			}
-
-			state.type = _type;
-			state.channel = _channel;
-		}
-		finally {
-			// do for sure before leaving
-		}
-	}
-	// $ANTLR end "CFLOAT"
-
 	// $ANTLR start "CINT"
 	public final void mCINT() throws RecognitionException {
 		try {
 			int _type = CINT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:53:11: ( ( '0' .. '9' )+ )
-			// compilador.g:53:14: ( '0' .. '9' )+
+			// compiler.g:102:13: ( ( '0' .. '9' )+ )
+			// compiler.g:102:15: ( '0' .. '9' )+
 			{
-			// compilador.g:53:14: ( '0' .. '9' )+
+			// compiler.g:102:15: ( '0' .. '9' )+
 			int cnt1=0;
 			loop1:
 			while (true) {
@@ -436,7 +411,7 @@ public class compiladorLexer extends Lexer {
 
 				switch (alt1) {
 				case 1 :
-					// compilador.g:
+					// compiler.g:
 					{
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
 						input.consume();
@@ -468,13 +443,38 @@ public class compiladorLexer extends Lexer {
 	}
 	// $ANTLR end "CINT"
 
+	// $ANTLR start "CFLOAT"
+	public final void mCFLOAT() throws RecognitionException {
+		try {
+			int _type = CFLOAT;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// compiler.g:103:13: ( CINT DOT CINT )
+			// compiler.g:103:15: CINT DOT CINT
+			{
+			mCINT(); 
+
+			mDOT(); 
+
+			mCINT(); 
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "CFLOAT"
+
 	// $ANTLR start "ID"
 	public final void mID() throws RecognitionException {
 		try {
 			int _type = ID;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:54:11: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-			// compilador.g:54:14: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+			// compiler.g:104:3: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+			// compiler.g:104:5: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
 			{
 			if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 				input.consume();
@@ -484,7 +484,7 @@ public class compiladorLexer extends Lexer {
 				recover(mse);
 				throw mse;
 			}
-			// compilador.g:54:38: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+			// compiler.g:105:5: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
 			loop2:
 			while (true) {
 				int alt2=2;
@@ -495,7 +495,7 @@ public class compiladorLexer extends Lexer {
 
 				switch (alt2) {
 				case 1 :
-					// compilador.g:
+					// compiler.g:
 					{
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 						input.consume();
@@ -529,10 +529,10 @@ public class compiladorLexer extends Lexer {
 		try {
 			int _type = WS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// compilador.g:55:10: ( ( ' ' | '\\n' | '\\t' | '\\r' )+ )
-			// compilador.g:55:13: ( ' ' | '\\n' | '\\t' | '\\r' )+
+			// compiler.g:112:3: ( ( ' ' | '\\n' | '\\r' | '\\t' )+ )
+			// compiler.g:112:5: ( ' ' | '\\n' | '\\r' | '\\t' )+
 			{
-			// compilador.g:55:13: ( ' ' | '\\n' | '\\t' | '\\r' )+
+			// compiler.g:112:5: ( ' ' | '\\n' | '\\r' | '\\t' )+
 			int cnt3=0;
 			loop3:
 			while (true) {
@@ -544,7 +544,7 @@ public class compiladorLexer extends Lexer {
 
 				switch (alt3) {
 				case 1 :
-					// compilador.g:
+					// compiler.g:
 					{
 					if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
 						input.consume();
@@ -579,152 +579,152 @@ public class compiladorLexer extends Lexer {
 
 	@Override
 	public void mTokens() throws RecognitionException {
-		// compilador.g:1:8: ( T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | INT | DOUBLE | PUBLIC | PRIVATE | PROTECTED | OCURLYB | CCURLYB | CLASS | COMMA | SEMICOLON | DOT | CFLOAT | CINT | ID | WS )
+		// compiler.g:1:8: ( T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | PUBLIC | PRIVATE | PROTECTED | INT | DOUBLE | CLASS | OCURLYB | CCURLYB | COMMA | SEMICOLON | DOT | CINT | CFLOAT | ID | WS )
 		int alt4=21;
 		alt4 = dfa4.predict(input);
 		switch (alt4) {
 			case 1 :
-				// compilador.g:1:10: T__19
+				// compiler.g:1:10: T__19
 				{
 				mT__19(); 
 
 				}
 				break;
 			case 2 :
-				// compilador.g:1:16: T__20
+				// compiler.g:1:16: T__20
 				{
 				mT__20(); 
 
 				}
 				break;
 			case 3 :
-				// compilador.g:1:22: T__21
+				// compiler.g:1:22: T__21
 				{
 				mT__21(); 
 
 				}
 				break;
 			case 4 :
-				// compilador.g:1:28: T__22
+				// compiler.g:1:28: T__22
 				{
 				mT__22(); 
 
 				}
 				break;
 			case 5 :
-				// compilador.g:1:34: T__23
+				// compiler.g:1:34: T__23
 				{
 				mT__23(); 
 
 				}
 				break;
 			case 6 :
-				// compilador.g:1:40: T__24
+				// compiler.g:1:40: T__24
 				{
 				mT__24(); 
 
 				}
 				break;
 			case 7 :
-				// compilador.g:1:46: INT
-				{
-				mINT(); 
-
-				}
-				break;
-			case 8 :
-				// compilador.g:1:50: DOUBLE
-				{
-				mDOUBLE(); 
-
-				}
-				break;
-			case 9 :
-				// compilador.g:1:57: PUBLIC
+				// compiler.g:1:46: PUBLIC
 				{
 				mPUBLIC(); 
 
 				}
 				break;
-			case 10 :
-				// compilador.g:1:64: PRIVATE
+			case 8 :
+				// compiler.g:1:53: PRIVATE
 				{
 				mPRIVATE(); 
 
 				}
 				break;
-			case 11 :
-				// compilador.g:1:72: PROTECTED
+			case 9 :
+				// compiler.g:1:61: PROTECTED
 				{
 				mPROTECTED(); 
 
 				}
 				break;
+			case 10 :
+				// compiler.g:1:71: INT
+				{
+				mINT(); 
+
+				}
+				break;
+			case 11 :
+				// compiler.g:1:75: DOUBLE
+				{
+				mDOUBLE(); 
+
+				}
+				break;
 			case 12 :
-				// compilador.g:1:82: OCURLYB
-				{
-				mOCURLYB(); 
-
-				}
-				break;
-			case 13 :
-				// compilador.g:1:90: CCURLYB
-				{
-				mCCURLYB(); 
-
-				}
-				break;
-			case 14 :
-				// compilador.g:1:98: CLASS
+				// compiler.g:1:82: CLASS
 				{
 				mCLASS(); 
 
 				}
 				break;
+			case 13 :
+				// compiler.g:1:88: OCURLYB
+				{
+				mOCURLYB(); 
+
+				}
+				break;
+			case 14 :
+				// compiler.g:1:96: CCURLYB
+				{
+				mCCURLYB(); 
+
+				}
+				break;
 			case 15 :
-				// compilador.g:1:104: COMMA
+				// compiler.g:1:104: COMMA
 				{
 				mCOMMA(); 
 
 				}
 				break;
 			case 16 :
-				// compilador.g:1:110: SEMICOLON
+				// compiler.g:1:110: SEMICOLON
 				{
 				mSEMICOLON(); 
 
 				}
 				break;
 			case 17 :
-				// compilador.g:1:120: DOT
+				// compiler.g:1:120: DOT
 				{
 				mDOT(); 
 
 				}
 				break;
 			case 18 :
-				// compilador.g:1:124: CFLOAT
-				{
-				mCFLOAT(); 
-
-				}
-				break;
-			case 19 :
-				// compilador.g:1:131: CINT
+				// compiler.g:1:124: CINT
 				{
 				mCINT(); 
 
 				}
 				break;
+			case 19 :
+				// compiler.g:1:129: CFLOAT
+				{
+				mCFLOAT(); 
+
+				}
+				break;
 			case 20 :
-				// compilador.g:1:136: ID
+				// compiler.g:1:136: ID
 				{
 				mID(); 
 
 				}
 				break;
 			case 21 :
-				// compilador.g:1:139: WS
+				// compiler.g:1:139: WS
 				{
 				mWS(); 
 
@@ -737,43 +737,42 @@ public class compiladorLexer extends Lexer {
 
 	protected DFA4 dfa4 = new DFA4(this);
 	static final String DFA4_eotS =
-		"\7\uffff\3\21\2\uffff\1\21\3\uffff\1\30\2\uffff\5\21\2\uffff\1\40\5\21"+
-		"\1\uffff\11\21\1\57\1\60\1\61\2\21\3\uffff\1\64\1\21\1\uffff\1\21\1\67"+
-		"\1\uffff";
+		"\7\uffff\4\21\5\uffff\1\30\2\uffff\5\21\2\uffff\3\21\1\43\5\21\1\uffff"+
+		"\6\21\1\57\1\60\2\21\1\63\2\uffff\1\64\1\21\2\uffff\1\21\1\67\1\uffff";
 	static final String DFA4_eofS =
 		"\70\uffff";
 	static final String DFA4_minS =
-		"\1\11\6\uffff\1\156\1\157\1\162\2\uffff\1\154\3\uffff\1\56\2\uffff\1\164"+
-		"\1\165\1\142\1\151\1\141\2\uffff\1\60\1\142\1\154\1\166\1\164\1\163\1"+
-		"\uffff\1\154\1\151\1\141\1\145\1\163\1\145\1\143\1\164\1\143\3\60\1\145"+
-		"\1\164\3\uffff\1\60\1\145\1\uffff\1\144\1\60\1\uffff";
+		"\1\11\6\uffff\1\162\1\156\1\157\1\154\5\uffff\1\56\2\uffff\1\142\1\151"+
+		"\1\164\1\165\1\141\2\uffff\1\154\1\166\1\164\1\60\1\142\1\163\1\151\1"+
+		"\141\1\145\1\uffff\1\154\1\163\1\143\1\164\1\143\1\145\2\60\1\145\1\164"+
+		"\1\60\2\uffff\1\60\1\145\2\uffff\1\144\1\60\1\uffff";
 	static final String DFA4_maxS =
-		"\1\175\6\uffff\1\156\1\157\1\165\2\uffff\1\154\3\uffff\1\71\2\uffff\1"+
-		"\164\1\165\1\142\1\157\1\141\2\uffff\1\172\1\142\1\154\1\166\1\164\1\163"+
-		"\1\uffff\1\154\1\151\1\141\1\145\1\163\1\145\1\143\1\164\1\143\3\172\1"+
-		"\145\1\164\3\uffff\1\172\1\145\1\uffff\1\144\1\172\1\uffff";
+		"\1\175\6\uffff\1\165\1\156\1\157\1\154\5\uffff\1\71\2\uffff\1\142\1\157"+
+		"\1\164\1\165\1\141\2\uffff\1\154\1\166\1\164\1\172\1\142\1\163\1\151\1"+
+		"\141\1\145\1\uffff\1\154\1\163\1\143\1\164\1\143\1\145\2\172\1\145\1\164"+
+		"\1\172\2\uffff\1\172\1\145\2\uffff\1\144\1\172\1\uffff";
 	static final String DFA4_acceptS =
-		"\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\3\uffff\1\14\1\15\1\uffff\1\17\1\20\1"+
-		"\21\1\uffff\1\24\1\25\5\uffff\1\23\1\22\6\uffff\1\7\16\uffff\1\16\1\10"+
-		"\1\11\2\uffff\1\12\2\uffff\1\13";
+		"\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\4\uffff\1\15\1\16\1\17\1\20\1\21\1\uffff"+
+		"\1\24\1\25\5\uffff\1\22\1\23\11\uffff\1\12\13\uffff\1\14\1\7\2\uffff\1"+
+		"\13\1\10\2\uffff\1\11";
 	static final String DFA4_specialS =
 		"\70\uffff}>";
 	static final String[] DFA4_transitionS = {
 			"\2\22\2\uffff\1\22\22\uffff\1\22\7\uffff\1\1\1\2\1\3\1\4\1\15\1\5\1\17"+
 			"\1\uffff\12\20\1\uffff\1\16\1\uffff\1\6\3\uffff\32\21\4\uffff\1\21\1"+
-			"\uffff\2\21\1\14\1\10\4\21\1\7\6\21\1\11\12\21\1\12\1\uffff\1\13",
+			"\uffff\2\21\1\12\1\11\4\21\1\10\6\21\1\7\12\21\1\13\1\uffff\1\14",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"\1\23",
-			"\1\24",
-			"\1\26\2\uffff\1\25",
-			"",
-			"",
+			"\1\24\2\uffff\1\23",
+			"\1\25",
+			"\1\26",
 			"\1\27",
+			"",
+			"",
 			"",
 			"",
 			"",
@@ -781,22 +780,22 @@ public class compiladorLexer extends Lexer {
 			"",
 			"",
 			"\1\32",
-			"\1\33",
-			"\1\34",
-			"\1\35\5\uffff\1\36",
+			"\1\33\5\uffff\1\34",
+			"\1\35",
+			"\1\36",
 			"\1\37",
 			"",
 			"",
-			"\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
+			"\1\40",
 			"\1\41",
 			"\1\42",
-			"\1\43",
+			"\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
 			"\1\44",
 			"\1\45",
-			"",
 			"\1\46",
 			"\1\47",
 			"\1\50",
+			"",
 			"\1\51",
 			"\1\52",
 			"\1\53",
@@ -805,14 +804,14 @@ public class compiladorLexer extends Lexer {
 			"\1\56",
 			"\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
 			"\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
-			"\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
+			"\1\61",
 			"\1\62",
-			"\1\63",
-			"",
+			"\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
 			"",
 			"",
 			"\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
 			"\1\65",
+			"",
 			"",
 			"\1\66",
 			"\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
@@ -850,7 +849,7 @@ public class compiladorLexer extends Lexer {
 		}
 		@Override
 		public String getDescription() {
-			return "1:1: Tokens : ( T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | INT | DOUBLE | PUBLIC | PRIVATE | PROTECTED | OCURLYB | CCURLYB | CLASS | COMMA | SEMICOLON | DOT | CFLOAT | CINT | ID | WS );";
+			return "1:1: Tokens : ( T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | PUBLIC | PRIVATE | PROTECTED | INT | DOUBLE | CLASS | OCURLYB | CCURLYB | COMMA | SEMICOLON | DOT | CINT | CFLOAT | ID | WS );";
 		}
 	}
 
